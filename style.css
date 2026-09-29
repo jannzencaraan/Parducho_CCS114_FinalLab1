@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8f1f8;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #24527a;
+  margin-bottom: 5px;
+}
+
+.container > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-box {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 25px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group > label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #24527a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3279a8;
+}
+
+.gender {
+  display: flex;
+  gap: 15px;
+  padding-top: 5px;
+}
+
+.gender label {
+  font-weight: normal;
+  color: #333;
+}
+
+.gender input {
+  margin-right: 4px;
+}
+
+button {
+  grid-column: 1 / 3;
+  padding: 12px;
+  margin-top: 5px;
+  background-color: #3279a8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #245d82;
+}
+
+.result {
+  background-color: white;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.result h2 {
+  margin-top: 0;
+  color: #24527a;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+#output p {
+  color: #777;
+}
+
+.info {
+  padding: 10px 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.info strong {
+  color: #24527a;
+  margin-right: 10px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 95%;
+  }
+
+  form {
+    display: block;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .gender {
+    flex-wrap: wrap;
+  }
+}
